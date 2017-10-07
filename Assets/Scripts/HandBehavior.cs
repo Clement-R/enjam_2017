@@ -43,6 +43,8 @@ public class HandBehavior : MonoBehaviour {
                 _draggedUnit.gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
                 _isDragging = true;
+                _handShadowBehavior.isDragging = true;
+                _handShadowBehavior.draggedUnit = _draggedUnit.gameObject;
             }
 
             _handShadowSr.color = Color.red;
@@ -77,6 +79,8 @@ public class HandBehavior : MonoBehaviour {
                 }
 
                 _isDragging = false;
+                _handShadowBehavior.draggedUnit = null;
+                _handShadowBehavior.isDragging = false;
             }
 
             _handShadowSr.color = Color.white;

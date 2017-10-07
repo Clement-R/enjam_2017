@@ -5,7 +5,13 @@ using UnityEngine;
 public class HandShadowBehavior : MonoBehaviour {
 
     [HideInInspector]
+    public string playerId = "1";
+    //[HideInInspector]
+    public bool isDragging = false;
+    [HideInInspector]
     public GameObject targetedUnit = null;
+    [HideInInspector]
+    public GameObject draggedUnit = null;
     [HideInInspector]
     public EnemyBehavior targetedUnitBehavior = null;
 
@@ -14,31 +20,27 @@ public class HandShadowBehavior : MonoBehaviour {
     public GameObject[] doorArea;
     public GameObject[] dungeonArea;
 
-    public string playerId;
-
     [HideInInspector]
     public bool isInGoodAreaZone = false;
     [HideInInspector]
     public bool isInAreaZone = false;
-
-    void Start () {
-		
-	}
-	
-	void Update () {
-    }
-
+    
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (targetedUnit != null)
+        if(isDragging)
         {
-            
+            Debug.Log(draggedUnit.name);
+            Debug.Log(collision.name);
+            if (collision.CompareTag("area_" + playerId) && collision.name.Contains(draggedUnit.name))
+            {
+                Debug.Log("Valid one");
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (targetedUnit == null)
+        if (targetedUnit == null && !isDragging)
         {
             targetedUnit = collision.gameObject;
             targetedUnitBehavior = collision.gameObject.GetComponent<EnemyBehavior>();
@@ -49,7 +51,7 @@ public class HandShadowBehavior : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (targetedUnit != null && collision.gameObject == targetedUnit)
+        if (targetedUnit != null && !isDragging)
         {
             targetedUnit = null;
             targetedUnitBehavior = null;

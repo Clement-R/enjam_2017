@@ -597,6 +597,7 @@ GameObject:
   - component: {fileID: 264137093}
   - component: {fileID: 264137094}
   - component: {fileID: 264137095}
+  - component: {fileID: 264137096}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_1
@@ -698,6 +699,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &264137096
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264137091}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &549590022
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +860,7 @@ GameObject:
   - component: {fileID: 577719913}
   - component: {fileID: 577719914}
   - component: {fileID: 577719915}
+  - component: {fileID: 577719916}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_2
@@ -940,6 +962,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &577719916
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577719911}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &636288953
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +993,7 @@ GameObject:
   - component: {fileID: 636288955}
   - component: {fileID: 636288956}
   - component: {fileID: 636288957}
+  - component: {fileID: 636288958}
   m_Layer: 0
   m_Name: tower
   m_TagString: area_2
@@ -1052,6 +1095,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &636288958
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636288953}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &644838161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1126,7 @@ GameObject:
   - component: {fileID: 644838163}
   - component: {fileID: 644838164}
   - component: {fileID: 644838165}
+  - component: {fileID: 644838166}
   m_Layer: 0
   m_Name: tower
   m_TagString: area_1
@@ -1164,6 +1228,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &644838166
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644838161}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &657273138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1259,7 @@ GameObject:
   - component: {fileID: 657273140}
   - component: {fileID: 657273141}
   - component: {fileID: 657273142}
+  - component: {fileID: 657273143}
   m_Layer: 0
   m_Name: door
   m_TagString: area_2
@@ -1276,6 +1361,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &657273143
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657273138}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &725746208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,11 +1492,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetedUnit: {fileID: 0}
   targetedUnitBehavior: {fileID: 0}
-  brickAreas: []
-  towerAreas: []
-  doorArea: []
-  dungeonArea: []
-  playerId: 
+  brickAreas:
+  - {fileID: 1614576804}
+  - {fileID: 577719911}
+  - {fileID: 1820677732}
+  - {fileID: 1252737352}
+  towerAreas:
+  - {fileID: 636288953}
+  - {fileID: 951771742}
+  doorArea:
+  - {fileID: 657273138}
+  dungeonArea:
+  - {fileID: 2046557823}
   isInGoodAreaZone: 0
   isInAreaZone: 0
 --- !u!1 &773714861
@@ -1759,6 +1871,7 @@ GameObject:
   - component: {fileID: 951771744}
   - component: {fileID: 951771745}
   - component: {fileID: 951771746}
+  - component: {fileID: 951771747}
   m_Layer: 0
   m_Name: tower
   m_TagString: area_2
@@ -1860,6 +1973,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &951771747
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951771742}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &969334287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,6 +2004,7 @@ GameObject:
   - component: {fileID: 969334289}
   - component: {fileID: 969334290}
   - component: {fileID: 969334291}
+  - component: {fileID: 969334292}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_1
@@ -1972,6 +2106,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &969334292
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969334287}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1099277107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2297,7 @@ GameObject:
   - component: {fileID: 1199847175}
   - component: {fileID: 1199847176}
   - component: {fileID: 1199847177}
+  - component: {fileID: 1199847178}
   m_Layer: 0
   m_Name: dungeon
   m_TagString: area_1
@@ -2244,6 +2399,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1199847178
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199847173}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1252737352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2430,7 @@ GameObject:
   - component: {fileID: 1252737354}
   - component: {fileID: 1252737355}
   - component: {fileID: 1252737356}
+  - component: {fileID: 1252737357}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_2
@@ -2356,6 +2532,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1252737357
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252737352}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1271459460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2809,7 @@ GameObject:
   - component: {fileID: 1323549241}
   - component: {fileID: 1323549242}
   - component: {fileID: 1323549243}
+  - component: {fileID: 1323549244}
   m_Layer: 0
   m_Name: door
   m_TagString: area_1
@@ -2714,6 +2911,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1323549244
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323549239}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1385456798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,6 +2942,7 @@ GameObject:
   - component: {fileID: 1385456800}
   - component: {fileID: 1385456801}
   - component: {fileID: 1385456802}
+  - component: {fileID: 1385456803}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_1
@@ -2826,6 +3044,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1385456803
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1385456798}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1463448762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +3115,7 @@ GameObject:
   - component: {fileID: 1489563614}
   - component: {fileID: 1489563615}
   - component: {fileID: 1489563616}
+  - component: {fileID: 1489563617}
   m_Layer: 0
   m_Name: tower
   m_TagString: area_1
@@ -2978,6 +3217,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1489563617
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489563612}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1489726858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,7 +3463,6 @@ MonoBehaviour:
   towerAreas: []
   doorArea: []
   dungeonArea: []
-  playerId: 
   isInGoodAreaZone: 0
   isInAreaZone: 0
 --- !u!1 &1563573142
@@ -3363,6 +3621,7 @@ GameObject:
   - component: {fileID: 1595730479}
   - component: {fileID: 1595730480}
   - component: {fileID: 1595730481}
+  - component: {fileID: 1595730482}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_1
@@ -3464,6 +3723,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1595730482
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595730477}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1614576804
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,6 +3754,7 @@ GameObject:
   - component: {fileID: 1614576806}
   - component: {fileID: 1614576807}
   - component: {fileID: 1614576808}
+  - component: {fileID: 1614576809}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_2
@@ -3576,6 +3856,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1614576809
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614576804}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1677362784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,6 +3970,7 @@ GameObject:
   - component: {fileID: 1820677734}
   - component: {fileID: 1820677735}
   - component: {fileID: 1820677736}
+  - component: {fileID: 1820677737}
   m_Layer: 0
   m_Name: brick
   m_TagString: area_2
@@ -3771,6 +4072,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &1820677737
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1820677732}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2046557823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,6 +4103,7 @@ GameObject:
   - component: {fileID: 2046557825}
   - component: {fileID: 2046557826}
   - component: {fileID: 2046557827}
+  - component: {fileID: 2046557828}
   m_Layer: 0
   m_Name: dungeon
   m_TagString: area_2
@@ -3883,6 +4205,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 64, y: 17}
   m_EdgeRadius: 0
+--- !u!50 &2046557828
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046557823}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2089752084
 GameObject:
   m_ObjectHideFlags: 0
