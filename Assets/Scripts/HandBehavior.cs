@@ -49,34 +49,25 @@ public class HandBehavior : MonoBehaviour {
 
             _handShadowSr.color = Color.red;
         }
-
+        
         if (Input.GetButton("A_" + playerId))
         {
             _handShadowSr.color = Color.red;
         } else {
-
-            // If we were dragging a unit
+            // If we were dragging a unit and we drop it
             if(_isDragging)
             {
-                Debug.Log("LEL");
-
                 if(_handShadowBehavior.isInGoodAreaZone)
                 {
-                    // Stun the unit and reset variables
-                }
-                else if (_handShadowBehavior.isInAreaZone)
-                {
-                    // Teleport the unit at the brick line (get brick zone, move trooper width / 2)
-                    // Release the unit
+                    _draggedUnit.Stun();
                 }
                 else
                 {
                     _draggedUnit.Release();
-                    _draggedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
-                    _draggedUnit.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-                    _draggedUnit.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    _draggedUnit.gameObject.transform.parent = null;
                 }
+
+                // Reset the parent to avoid that the stun unit follow our hand
+                _draggedUnit.gameObject.transform.parent = null;
 
                 _isDragging = false;
                 _handShadowBehavior.draggedUnit = null;

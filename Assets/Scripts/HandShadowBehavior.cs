@@ -14,6 +14,8 @@ public class HandShadowBehavior : MonoBehaviour {
     public GameObject draggedUnit = null;
     [HideInInspector]
     public EnemyBehavior targetedUnitBehavior = null;
+    [HideInInspector]
+    public GameObject dropArea = null;
 
     public GameObject[] brickAreas;
     public GameObject[] towerAreas;
@@ -22,9 +24,16 @@ public class HandShadowBehavior : MonoBehaviour {
 
     [HideInInspector]
     public bool isInGoodAreaZone = false;
-    [HideInInspector]
-    public bool isInAreaZone = false;
-    
+
+    private void Update()
+    {
+        if (!isDragging)
+        {
+            isInGoodAreaZone = false;
+            dropArea = null;
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(isDragging)
@@ -34,6 +43,12 @@ public class HandShadowBehavior : MonoBehaviour {
             if (collision.CompareTag("area_" + playerId) && collision.name.Contains(draggedUnit.name))
             {
                 Debug.Log("Valid one");
+                isInGoodAreaZone = true;
+                dropArea = collision.gameObject;
+            } else
+            {
+                isInGoodAreaZone = false;
+                dropArea = null;
             }
         }
     }

@@ -6,7 +6,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     protected bool isAttacking = false;
     protected Rigidbody2D _rb;
-    protected float hMaxSpeed = 90f;
+    protected float hMaxSpeed = 25f;
     protected float vMaxSpeed = 75f;
 
     protected string type;
@@ -19,6 +19,20 @@ public class EnemyBehavior : MonoBehaviour {
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void Stun()
+    {
+        StartCoroutine(StunEffect());
+    }
+
+    IEnumerator StunEffect()
+    {
+        // TODO : Stun effect
+
+        yield return new WaitForSeconds(1.5f);
+
+        Release();
     }
 
     public void StopMovement()
@@ -44,6 +58,7 @@ public class EnemyBehavior : MonoBehaviour {
     {
         gameObject.AddComponent(typeof(Rigidbody2D));
         GetComponent<Rigidbody2D>().gravityScale = 0;
+        GetComponent<BoxCollider2D>().enabled = true;
         transform.parent = null;
 
         this.OnLaunch();
