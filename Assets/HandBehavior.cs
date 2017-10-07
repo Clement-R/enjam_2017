@@ -31,15 +31,21 @@ public class HandBehavior : MonoBehaviour {
             if(_handShadowBehavior.targetedUnitBehavior != null)
             {
                 _handShadowBehavior.targetedUnitBehavior.StopMovement();
-                _handShadowBehavior.targetedUnit.transform.parent = this.transform.parent;
+                Destroy(_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>());
+                _handShadowBehavior.targetedUnit.transform.parent = this.transform;
             }
 
             _handShadowSr.color = Color.red;
         } else {
             if(_handShadowBehavior.targetedUnitBehavior != null)
             {
-                _handShadowBehavior.targetedUnitBehavior.Release();
-                _handShadowBehavior.targetedUnit.transform.parent = null;
+                if (_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>() == null)
+                {
+                    _handShadowBehavior.targetedUnitBehavior.Release();
+                    _handShadowBehavior.targetedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
+                    _handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>().gravityScale = 0;
+                    _handShadowBehavior.targetedUnit.transform.parent = null;
+                }
             }
 
             _handShadowSr.color = Color.white;

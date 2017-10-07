@@ -33,7 +33,6 @@ public class EnemyBehavior : MonoBehaviour {
     {
         while (!isAttacking)
         {
-            Debug.Log("Running !");
             _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
             yield return null;
         }
@@ -41,12 +40,17 @@ public class EnemyBehavior : MonoBehaviour {
 
     public void Release()
     {
+        gameObject.AddComponent(typeof(Rigidbody2D));
+        GetComponent<Rigidbody2D>().gravityScale = 0;
+        transform.parent = null;
+
         this.OnLaunch();
     }
 
     protected void OnLaunch()
     {
         if(_runningCoroutine == null) {
+            _rb = GetComponent<Rigidbody2D>();
             _runningCoroutine = StartCoroutine(Run());
         }
     }
