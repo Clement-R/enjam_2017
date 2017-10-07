@@ -12,14 +12,80 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
-  RtpcWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{5BA6DC10-7E6F-408D-AE1A-77DB228F5B12}'
+    m_lastTimePsrt1: 1819560988
+    m_lastTimePart2: -1999303339
+    List:
+    - Name: Play_Test
+      Path: Default Work Unit\Play_Test
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Test
+        ObjectType: 3
+      ID: -1107460150
+      Guid: 9f764c90cf333c49b21f640ab2c92321
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B5E727F3-FEB4-4335-A706-34C2B75BF79B}'
+    m_lastTimePsrt1: -1428412269
+    m_lastTimePart2: -1999303343
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F1BD3453-C3CC-4C21-87F5-E0587F27706A}'
+    m_lastTimePsrt1: -1428382240
+    m_lastTimePart2: -1999303343
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{283CFC90-5BBC-4F38-8B6B-3FD39AA26A34}'
+    m_lastTimePsrt1: -1428382240
+    m_lastTimePart2: -1999303343
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E4ABBD56-0E5D-4968-90C8-00E595CBBCF5}'
+    m_lastTimePsrt1: 1906127592
+    m_lastTimePart2: -1999303339
+    List:
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      ID: -303024426
+      Guid: bc22ba4dfb75a94bb7ca9112817dba22
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{EC033239-532D-4A5A-BB69-20EC9324008D}'
+    m_lastTimePsrt1: -1428412269
+    m_lastTimePart2: -1999303343
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{86C6BA21-2DD1-48F5-8612-2325175AA7E7}'
+    m_lastTimePsrt1: -1428372231
+    m_lastTimePart2: -1999303343
+    List: []
+  ExpandedItems:
+  - /enjam_2017_WwiseProject
+  - /enjam_2017_WwiseProject/Events
+  - /enjam_2017_WwiseProject/Events/Default Work Unit
+  - /enjam_2017_WwiseProject/SoundBanks
+  - /enjam_2017_WwiseProject/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
