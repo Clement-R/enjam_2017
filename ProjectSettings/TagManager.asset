@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 2046829089
+    locked: 0
+  - name: right_army
+    uniqueID: 2808567975
+    locked: 0
+  - name: left_army
+    uniqueID: 701772353
+    locked: 0
+  - name: hand
+    uniqueID: 611723355
+    locked: 0
