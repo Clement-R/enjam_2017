@@ -12,13 +12,46 @@ public class EnemyBehavior : MonoBehaviour {
     protected float h = 0;
     protected float v = 0;
 
+    private Coroutine _runningCoroutine = null;
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
     }
 
+    public void StopMovement()
+    {
+        if (_runningCoroutine != null)
+        {
+            _rb.velocity = new Vector2(0, 0);
+            this.StopCoroutine(_runningCoroutine);
+            _runningCoroutine = null;
+        }
+    }
+
+    protected IEnumerator Run()
+    {
+        while (!isAttacking)
+        {
+            Debug.Log("Running !");
+            _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
+            yield return null;
+        }
+    }
+
+    public void Release()
+    {
+        this.OnLaunch();
+    }
+
+    protected void OnLaunch()
+    {
+        if(_runningCoroutine == null) {
+            _runningCoroutine = StartCoroutine(Run());
+        }
+    }
+
     void Start () {
-        // EventManager.StartListening("playerMove", OnPlayerMove);
     }
 	
 	void Update () {

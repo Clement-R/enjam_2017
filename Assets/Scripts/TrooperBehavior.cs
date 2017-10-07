@@ -14,20 +14,6 @@ public class TrooperBehavior : EnemyBehavior
         EventManager.StopListening("trooperLaunch", OnLaunch);
     }
 
-    void OnLaunch()
-    {
-        StartCoroutine("Run");
-    }
-
-    IEnumerator Run()
-    {
-        while(!isAttacking)
-        {
-            _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
-            yield return null;
-        }
-    }
-
     void Update () {
 		
 	}

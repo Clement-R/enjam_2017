@@ -13,11 +13,37 @@ public class HandBehavior : MonoBehaviour {
     public float vMaxSpeed = 150f;
 
     private Rigidbody2D _rb;
-    private int xVelocity;
-    private int yVelocity;
+    private int _xVelocity;
+    private int _yVelocity;
+    private SpriteRenderer _handShadowSr;
+    private HandShadowBehavior _handShadowBehavior;
 
     void Start () {
         _rb = GetComponent<Rigidbody2D>();
+        _handShadowSr = handShadow.GetComponent<SpriteRenderer>();
+        _handShadowBehavior = _handShadowSr.GetComponent<HandShadowBehavior>();
+    }
+
+    private void Update()
+    {
+        if(Input.GetButton("A_" + playerId))
+        {
+            if(_handShadowBehavior.targetedUnitBehavior != null)
+            {
+                _handShadowBehavior.targetedUnitBehavior.StopMovement();
+                _handShadowBehavior.targetedUnit.transform.parent = this.transform.parent;
+            }
+
+            _handShadowSr.color = Color.red;
+        } else {
+            if(_handShadowBehavior.targetedUnitBehavior != null)
+            {
+                _handShadowBehavior.targetedUnitBehavior.Release();
+                _handShadowBehavior.targetedUnit.transform.parent = null;
+            }
+
+            _handShadowSr.color = Color.white;
+        }
     }
 
     void FixedUpdate()
