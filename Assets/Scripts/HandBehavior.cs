@@ -7,6 +7,7 @@ public class HandBehavior : MonoBehaviour {
     public string playerId = "1";
 
     public GameObject handShadow;
+    public GameObject areaBehavior;
 
     public float shadowY = 75f;
     public float hMaxSpeed = 175f;
@@ -39,12 +40,20 @@ public class HandBehavior : MonoBehaviour {
         } else {
             if(_handShadowBehavior.targetedUnitBehavior != null)
             {
-                if (_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>() == null)
+                if(_handShadowBehavior.isInAreaZone)
                 {
-                    _handShadowBehavior.targetedUnitBehavior.Release();
-                    _handShadowBehavior.targetedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
-                    _handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>().gravityScale = 0;
-                    _handShadowBehavior.targetedUnit.transform.parent = null;
+                    // Drop in zone (area type must be checked before and go directly in else if needed)
+                    // Check if the zone is good for the type of dragged unit stun it and reset variables
+                }
+                else
+                {
+                    if (_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>() == null)
+                    {
+                        _handShadowBehavior.targetedUnitBehavior.Release();
+                        _handShadowBehavior.targetedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
+                        _handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>().gravityScale = 0;
+                        _handShadowBehavior.targetedUnit.transform.parent = null;
+                    }
                 }
             }
 

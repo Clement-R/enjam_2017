@@ -6,6 +6,7 @@ public class HandShadowBehavior : MonoBehaviour {
 
     public GameObject targetedUnit = null;
     public EnemyBehavior targetedUnitBehavior = null;
+    public bool isInAreaZone = false;
 
     void Start () {
 		
