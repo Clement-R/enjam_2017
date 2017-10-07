@@ -101,7 +101,6 @@ public class HandBehavior : MonoBehaviour {
                 {
                     Debug.Log(_draggedUnit.name.Contains("brick"));
                     if(_draggedUnit.name.Contains("brick")) {
-                        Debug.Log("SHUT UP, I KILL YOU !");
                         _draggedUnit.Kill();
                     } else {
                         _draggedUnit.Stun();

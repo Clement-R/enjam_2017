@@ -6,6 +6,12 @@ public class TrooperBehavior : EnemyBehavior
 {
     private Vector2 oldDirection;
 
+    new protected void Awake()
+    {
+        base.Awake();
+        _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * Random.Range(-1, 2));
+    }
+
     new void Start () {
         base.Start();
         type = "brick";
@@ -19,7 +25,10 @@ public class TrooperBehavior : EnemyBehavior
 
    void FixedUpdate()
     {
-        oldDirection = _rb.velocity;
+        if(_rb != null)
+        {
+            oldDirection = _rb.velocity;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D coll)

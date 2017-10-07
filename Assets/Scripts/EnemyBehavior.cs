@@ -17,10 +17,11 @@ public class EnemyBehavior : MonoBehaviour {
 
     public float h = 0;
     public float v = 0;
+    public float speed = 150f;
 
     private Coroutine _runningCoroutine = null;
 
-    private void Awake()
+    protected void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();
@@ -105,7 +106,14 @@ public class EnemyBehavior : MonoBehaviour {
     {
         while (!isAttacking)
         {
-            _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
+            Vector2 direction = new Vector2(0, 0);
+            direction.x = h;
+            direction.y = v;
+            direction.Normalize();
+            _rb.velocity = direction * speed;
+            
+            // _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
+
             yield return null;
         }
     }

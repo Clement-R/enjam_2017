@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4550692297658118}
   - component: {fileID: 61061478140701140}
-  m_Layer: 0
-  m_Name: GameObject (3)
-  m_TagString: Untagged
+  m_Layer: 13
+  m_Name: bottom
+  m_TagString: unit_walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,9 +36,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4540359899371516}
   - component: {fileID: 61125937512017068}
-  m_Layer: 0
-  m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_Layer: 13
+  m_Name: top
+  m_TagString: unit_walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1346041707142894}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -13, y: 268.8, z: 0}
+  m_LocalPosition: {x: -13, y: 177, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4977254801713174}
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1241353653436744}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c63a0a9d07f7b6b42bbb6d71256d6f37, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1346041707142894}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c63a0a9d07f7b6b42bbb6d71256d6f37, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

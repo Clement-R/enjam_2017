@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212093828896947864}
   - component: {fileID: 61693899575847360}
   - component: {fileID: 114172719643211254}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: hand_shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
