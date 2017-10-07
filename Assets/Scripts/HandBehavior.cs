@@ -7,7 +7,6 @@ public class HandBehavior : MonoBehaviour {
     public string playerId = "1";
 
     public GameObject handShadow;
-    public GameObject areaBehavior;
 
     public float shadowY = 75f;
     public float hMaxSpeed = 175f;
@@ -19,42 +18,65 @@ public class HandBehavior : MonoBehaviour {
     private SpriteRenderer _handShadowSr;
     private HandShadowBehavior _handShadowBehavior;
 
+    private EnemyBehavior _draggedUnit;
+
+    private bool _isDragging = false;
+
     void Start () {
         _rb = GetComponent<Rigidbody2D>();
         _handShadowSr = handShadow.GetComponent<SpriteRenderer>();
         _handShadowBehavior = _handShadowSr.GetComponent<HandShadowBehavior>();
+        _handShadowBehavior.playerId = playerId;
     }
 
     private void Update()
     {
-        if(Input.GetButton("A_" + playerId))
+        if (Input.GetButtonDown("A_" + playerId))
         {
-            if(_handShadowBehavior.targetedUnitBehavior != null)
+            // Drag the unit that's in the hand shadow
+            if (_handShadowBehavior.targetedUnitBehavior != null && !_isDragging)
             {
-                _handShadowBehavior.targetedUnitBehavior.StopMovement();
-                Destroy(_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>());
-                _handShadowBehavior.targetedUnit.transform.parent = this.transform;
+                _draggedUnit = _handShadowBehavior.targetedUnitBehavior;
+                _draggedUnit.StopMovement();
+                Destroy(_draggedUnit.gameObject.GetComponent<Rigidbody2D>());
+                _draggedUnit.gameObject.transform.parent = this.transform;
+                _draggedUnit.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+                _isDragging = true;
             }
 
             _handShadowSr.color = Color.red;
+        }
+
+        if (Input.GetButton("A_" + playerId))
+        {
+            _handShadowSr.color = Color.red;
         } else {
-            if(_handShadowBehavior.targetedUnitBehavior != null)
+
+            // If we were dragging a unit
+            if(_isDragging)
             {
-                if(_handShadowBehavior.isInAreaZone)
+                Debug.Log("LEL");
+
+                if(_handShadowBehavior.isInGoodAreaZone)
                 {
-                    // Drop in zone (area type must be checked before and go directly in else if needed)
-                    // Check if the zone is good for the type of dragged unit stun it and reset variables
+                    // Stun the unit and reset variables
+                }
+                else if (_handShadowBehavior.isInAreaZone)
+                {
+                    // Teleport the unit at the brick line (get brick zone, move trooper width / 2)
+                    // Release the unit
                 }
                 else
                 {
-                    if (_handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>() == null)
-                    {
-                        _handShadowBehavior.targetedUnitBehavior.Release();
-                        _handShadowBehavior.targetedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
-                        _handShadowBehavior.targetedUnit.GetComponent<Rigidbody2D>().gravityScale = 0;
-                        _handShadowBehavior.targetedUnit.transform.parent = null;
-                    }
+                    _draggedUnit.Release();
+                    _draggedUnit.gameObject.AddComponent(typeof(Rigidbody2D));
+                    _draggedUnit.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+                    _draggedUnit.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                    _draggedUnit.gameObject.transform.parent = null;
                 }
+
+                _isDragging = false;
             }
 
             _handShadowSr.color = Color.white;

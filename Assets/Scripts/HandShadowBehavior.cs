@@ -4,8 +4,21 @@ using UnityEngine;
 
 public class HandShadowBehavior : MonoBehaviour {
 
+    [HideInInspector]
     public GameObject targetedUnit = null;
+    [HideInInspector]
     public EnemyBehavior targetedUnitBehavior = null;
+
+    public GameObject[] brickAreas;
+    public GameObject[] towerAreas;
+    public GameObject[] doorArea;
+    public GameObject[] dungeonArea;
+
+    public string playerId;
+
+    [HideInInspector]
+    public bool isInGoodAreaZone = false;
+    [HideInInspector]
     public bool isInAreaZone = false;
 
     void Start () {
@@ -13,7 +26,15 @@ public class HandShadowBehavior : MonoBehaviour {
 	}
 	
 	void Update () {
-	}
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (targetedUnit != null)
+        {
+            
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

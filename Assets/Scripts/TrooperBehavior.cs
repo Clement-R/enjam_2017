@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrooperBehavior : EnemyBehavior
 {
     void Start () {
+        type = "brick";
         EventManager.StartListening("trooperLaunch", OnLaunch);
         this.h = 1;
     }

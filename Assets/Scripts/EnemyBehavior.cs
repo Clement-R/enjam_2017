@@ -9,6 +9,8 @@ public class EnemyBehavior : MonoBehaviour {
     protected float hMaxSpeed = 90f;
     protected float vMaxSpeed = 75f;
 
+    protected string type;
+
     protected float h = 0;
     protected float v = 0;
 
