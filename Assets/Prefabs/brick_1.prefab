@@ -72,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -99,9 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4157778e40cda841b40cad512a4c534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeBeforeMoving: 0
   aimedArea: area_2
-  h: -1
-  v: 0
+  h: -4
+  v: 2
 --- !u!212 &212166774584888530
 SpriteRenderer:
   m_ObjectHideFlags: 1
