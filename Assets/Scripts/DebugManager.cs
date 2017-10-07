@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DebugManager : MonoBehaviour {
-
-	void Start () {
-	}
-	
 	void Update () {
-	    if(Input.GetKeyDown(KeyCode.Space))
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             EventManager.TriggerEvent("trooperLaunch");
         }
@@ -17,5 +14,6 @@ public class DebugManager : MonoBehaviour {
         {
             EventManager.TriggerEvent("gameEnd");
         }
+#endif
     }
 }
