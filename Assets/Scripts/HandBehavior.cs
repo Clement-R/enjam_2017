@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HandBehavior : MonoBehaviour {
+    static public bool isPaused = false;
 
     public string playerId = "1";
 
     public GameObject handShadow;
 
+    public Sprite handIdle;
+    public Sprite handPick;
+
+    public float shadowX = 25f;
     public float shadowY = 75f;
+
     public float hMaxSpeed = 175f;
     public float vMaxSpeed = 150f;
 
     private Rigidbody2D _rb;
+    private SpriteRenderer _sr;
     private int _xVelocity;
     private int _yVelocity;
     private SpriteRenderer _handShadowSr;
@@ -24,13 +31,47 @@ public class HandBehavior : MonoBehaviour {
 
     void Start () {
         _rb = GetComponent<Rigidbody2D>();
+        _sr = GetComponent<SpriteRenderer>();
         _handShadowSr = handShadow.GetComponent<SpriteRenderer>();
         _handShadowBehavior = _handShadowSr.GetComponent<HandShadowBehavior>();
         _handShadowBehavior.playerId = playerId;
+
+        EventManager.StartListening("gameEnd", OnEnd);
+        EventManager.StartListening("gamePause", OnPause);
+        EventManager.StartListening("gameResume", OnResume);
+    }
+
+    void OnEnd()
+    {
+        _rb.simulated = false;
+    }
+
+    void OnPause()
+    {
+        _rb.simulated = false;
+    }
+
+    void OnResume()
+    {
+        _rb.simulated = true;
     }
 
     private void Update()
     {
+        if(Input.GetButtonDown("Start_" + playerId))
+        {
+            if(isPaused)
+            {
+                isPaused = false;
+                EventManager.TriggerEvent("gameResume");
+            }
+            else
+            {
+                isPaused = true;
+                EventManager.TriggerEvent("gamePause");
+            }
+        }
+
         if (Input.GetButtonDown("A_" + playerId))
         {
             // Drag the unit that's in the hand shadow
@@ -46,12 +87,11 @@ public class HandBehavior : MonoBehaviour {
                 _handShadowBehavior.isDragging = true;
                 _handShadowBehavior.draggedUnit = _draggedUnit.gameObject;
             }
-
-            _handShadowSr.color = Color.red;
         }
         
         if (Input.GetButton("A_" + playerId))
         {
+            _sr.sprite = handPick;
             _handShadowSr.color = Color.red;
         } else {
             // If we were dragging a unit and we drop it
@@ -59,7 +99,13 @@ public class HandBehavior : MonoBehaviour {
             {
                 if(_handShadowBehavior.isInGoodAreaZone)
                 {
-                    _draggedUnit.Stun();
+                    Debug.Log(_draggedUnit.name.Contains("brick"));
+                    if(_draggedUnit.name.Contains("brick")) {
+                        Debug.Log("SHUT UP, I KILL YOU !");
+                        _draggedUnit.Kill();
+                    } else {
+                        _draggedUnit.Stun();
+                    }
                 }
                 else
                 {
@@ -74,6 +120,7 @@ public class HandBehavior : MonoBehaviour {
                 _handShadowBehavior.isDragging = false;
             }
 
+            _sr.sprite = handIdle;
             _handShadowSr.color = Color.white;
         }
     }
@@ -85,6 +132,6 @@ public class HandBehavior : MonoBehaviour {
 
         _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
 
-        handShadow.transform.position = new Vector2(this.transform.position.x, this.transform.position.y - shadowY);
+        handShadow.transform.position = new Vector2(this.transform.position.x - shadowX, this.transform.position.y - shadowY);
     }
 }

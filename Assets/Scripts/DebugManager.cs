@@ -12,5 +12,10 @@ public class DebugManager : MonoBehaviour {
         {
             EventManager.TriggerEvent("trooperLaunch");
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            EventManager.TriggerEvent("gameEnd");
+        }
+    }
 }

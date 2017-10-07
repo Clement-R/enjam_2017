@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour {
 
+    public float timeBeforeMoving = 0.0f;
+    public string aimedArea = "area_1";
+
     protected bool isAttacking = false;
     protected Rigidbody2D _rb;
     protected float hMaxSpeed = 25f;
@@ -11,8 +14,8 @@ public class EnemyBehavior : MonoBehaviour {
 
     protected string type;
 
-    protected float h = 0;
-    protected float v = 0;
+    public float h = 0;
+    public float v = 0;
 
     private Coroutine _runningCoroutine = null;
 
@@ -21,9 +24,29 @@ public class EnemyBehavior : MonoBehaviour {
         _rb = GetComponent<Rigidbody2D>();
     }
 
+    public void Start()
+    {
+        EventManager.StartListening("gameEnd", OnEnd);
+        EventManager.StartListening("gamePause", OnPause);
+        EventManager.StartListening("gameResume", OnResume);
+
+        StartCoroutine(StartMoving(timeBeforeMoving));
+    }
+
+    IEnumerator StartMoving(float timeBeforeMoving)
+    {
+        yield return new WaitForSeconds(timeBeforeMoving);
+        Release();
+    }
+
     public void Stun()
     {
         StartCoroutine(StunEffect());
+    }
+
+    public void Kill()
+    {
+        Destroy(this.gameObject);
     }
 
     IEnumerator StunEffect()
@@ -33,6 +56,32 @@ public class EnemyBehavior : MonoBehaviour {
         yield return new WaitForSeconds(1.5f);
 
         Release();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag(aimedArea))
+        {
+            Debug.Log("Area reached !");
+            EventManager.TriggerEvent("gameEnd");
+        }
+    }
+
+    void OnPause()
+    {
+        Debug.Log("PAUSE");
+        StopMovement();
+    }
+
+    void OnResume()
+    {
+        Debug.Log("RESUME");
+        OnLaunch();
+    }
+
+    void OnEnd()
+    {
+        StopMovement();
     }
 
     public void StopMovement()
@@ -71,11 +120,4 @@ public class EnemyBehavior : MonoBehaviour {
             _runningCoroutine = StartCoroutine(Run());
         }
     }
-
-    void Start () {
-    }
-	
-	void Update () {
-		
-	}
 }

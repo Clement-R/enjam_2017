@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class TrooperBehavior : EnemyBehavior
 {
-    void Start () {
+    new void Start () {
+        base.Start();
         type = "brick";
         EventManager.StartListening("trooperLaunch", OnLaunch);
-        this.h = 1;
     }
 
     void OnDisable()
     {
         EventManager.StopListening("trooperLaunch", OnLaunch);
     }
-
-    void Update () {
-		
-	}
 }
