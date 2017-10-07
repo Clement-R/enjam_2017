@@ -9,6 +9,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     protected bool isAttacking = false;
     protected Rigidbody2D _rb;
+    protected SpriteRenderer _sr;
     protected float hMaxSpeed = 25f;
     protected float vMaxSpeed = 75f;
 
@@ -21,6 +22,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     private void Awake()
     {
+        _sr = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -31,6 +33,11 @@ public class EnemyBehavior : MonoBehaviour {
         EventManager.StartListening("gameResume", OnResume);
 
         StartCoroutine(StartMoving(timeBeforeMoving));
+    }
+
+    void Update()
+    {
+        _sr.sortingOrder = Mathf.Abs((int)transform.position.y - 256);
     }
 
     IEnumerator StartMoving(float timeBeforeMoving)
