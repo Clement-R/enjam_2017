@@ -44,6 +44,9 @@ TagManager:
   - name: background
     uniqueID: 2046829089
     locked: 0
+  - name: hand_shadow
+    uniqueID: 3123888449
+    locked: 0
   - name: right_army
     uniqueID: 2808567975
     locked: 0
