@@ -10,6 +10,12 @@ TagManager:
   - hand_shadow
   - hand_1
   - hand_2
+  - drop_zone_2
+  - drop_zone_1
+  - menu_unit
+  - menu_drop_zone
+  - main_menu_unit
+  - transition_screen
   layers:
   - Default
   - TransparentFX
@@ -28,8 +34,8 @@ TagManager:
   - hand_shadow_1
   - hand_shadow_2
   - hand_walls
-  - 
-  - 
+  - drop_zone
+  - main_menu_unit
   - 
   - 
   - 
@@ -53,6 +59,9 @@ TagManager:
   - name: hand_shadow
     uniqueID: 3123888449
     locked: 0
+  - name: menu_text
+    uniqueID: 3083964697
+    locked: 0
   - name: right_army
     uniqueID: 2808567975
     locked: 0
@@ -61,4 +70,7 @@ TagManager:
     locked: 0
   - name: hand
     uniqueID: 611723355
+    locked: 0
+  - name: transition
+    uniqueID: 1180898475
     locked: 0

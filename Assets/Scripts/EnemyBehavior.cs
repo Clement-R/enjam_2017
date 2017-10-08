@@ -6,6 +6,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     public float timeBeforeMoving = 0.0f;
     public string aimedArea = "area_1";
+    public float stunDuration = 2f;
 
     protected bool isAttacking = false;
     protected Rigidbody2D _rb = null;
@@ -13,7 +14,8 @@ public class EnemyBehavior : MonoBehaviour {
     protected float hMaxSpeed = 25f;
     protected float vMaxSpeed = 75f;
 
-    protected string type;
+    [HideInInspector]
+    public string type = "";
 
     public float h = 0;
     public float v = 0;
@@ -61,10 +63,9 @@ public class EnemyBehavior : MonoBehaviour {
 
     IEnumerator StunEffect()
     {
-        Debug.Log("STUN");
         isActive = false;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(stunDuration);
 
         Release();
     }
@@ -102,6 +103,7 @@ public class EnemyBehavior : MonoBehaviour {
             _rb.velocity = new Vector2(0, 0);
             this.StopCoroutine(_runningCoroutine);
             _runningCoroutine = null;
+            isActive = false;
         }
     }
 

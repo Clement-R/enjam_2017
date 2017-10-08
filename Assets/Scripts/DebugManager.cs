@@ -52,5 +52,10 @@ public class DebugManager : MonoBehaviour {
             AkSoundEngine.SetSwitch("Main_switch", "transition3", gameObject);
         }
 #endif
+
+        if (Input.GetKeyDown("m"))
+        {
+            TransitionManager.toggleTransiton();
+        }
     }
 }

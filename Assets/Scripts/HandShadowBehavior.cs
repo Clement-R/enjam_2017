@@ -38,7 +38,7 @@ public class HandShadowBehavior : MonoBehaviour {
     {
         if(isDragging)
         {
-            if (collision.CompareTag("area_" + playerId) && draggedUnit.name.Contains(collision.name))
+            if (collision.CompareTag("area_" + playerId) || collision.CompareTag("menu_drop_zone") && draggedUnit.name.Contains(collision.name))
             {
                 isInGoodAreaZone = true;
                 dropArea = collision.gameObject;
@@ -57,8 +57,6 @@ public class HandShadowBehavior : MonoBehaviour {
             targetedUnit = collision.gameObject;
             targetedUnitBehavior = collision.gameObject.GetComponent<EnemyBehavior>();
         }
-
-        Debug.Log("Enter : " + collision.gameObject.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -68,7 +66,5 @@ public class HandShadowBehavior : MonoBehaviour {
             targetedUnit = null;
             targetedUnitBehavior = null;
         }
-
-        Debug.Log("Exit : " + collision.gameObject.name);
     }
 }

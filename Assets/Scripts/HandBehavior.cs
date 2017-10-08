@@ -102,14 +102,35 @@ public class HandBehavior : MonoBehaviour {
                 {
                     if(_draggedUnit.name.Contains("brick")) {
                         _draggedUnit.Kill();
-                    } else {
-                        Debug.Log("HALLO");
+                    }
+                    else if (_draggedUnit.type == "menu_unit")
+                    {
+                        _draggedUnit.GetComponent<SpriteRenderer>().flipX = false;
+                        _draggedUnit.StopMovement();
+                        EventManager.TriggerEvent("unitMenuDrop");
+                    }
+                    else if (_draggedUnit.type == "main_menu_unit")
+                    {
+                        Debug.Log("Drop da unit");
+                        _draggedUnit.GetComponent<SpriteRenderer>().flipX = false;
+                        _draggedUnit.StopMovement();
+                        EventManager.TriggerEvent(_handShadowBehavior.dropArea.GetComponent<UiTrigger>().eventToListen);
+                    }
+                    else {
                         _draggedUnit.Stun();
                     }
                 }
                 else
                 {
-                    _draggedUnit.Release();
+                    var myObject = _draggedUnit as UnitMainMenuBehavior;
+                    if (myObject != null)
+                    {
+                        myObject.Release();
+                    }
+                    else
+                    {
+                        _draggedUnit.Release();
+                    }
                 }
 
                 // Reset the parent to avoid that the stun unit follow our hand

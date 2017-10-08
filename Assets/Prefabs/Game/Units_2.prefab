@@ -364,8 +364,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeMoving: 40
   aimedArea: area_1
+  stunDuration: 2
+  type: 
   h: 1
   v: 0
+  speed: 150
+  isActive: 0
 --- !u!114 &114297627115146696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,8 +383,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeMoving: 55
   aimedArea: area_1
+  stunDuration: 2
+  type: 
   h: 1
   v: 0
+  speed: 150
+  isActive: 0
 --- !u!114 &114460693097520878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,8 +402,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeMoving: 9
   aimedArea: area_1
+  stunDuration: 2
+  type: 
   h: 1
   v: 0
+  speed: 150
+  isActive: 0
 --- !u!114 &114609714856061986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,8 +421,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeMoving: 25
   aimedArea: area_1
+  stunDuration: 2
+  type: 
   h: 1
   v: 0
+  speed: 150
+  isActive: 0
 --- !u!212 &212186744435993892
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -26,7 +26,6 @@ public class TowerBehavior : EnemyBehavior
             if (isActive && _canSprint) {
                 StartCoroutine(SprintCooldown());
                 StartCoroutine(Sprint());
-                Debug.Log("Oh riiiick");
             }
         }
     }

@@ -18,7 +18,6 @@ public class DungeonBehavior : EnemyBehavior
         base.Awake();
 
         hand = GameObject.FindGameObjectWithTag(handToAvoid).GetComponent<HandBehavior>().handShadow;
-        Debug.Log(hand.GetInstanceID());
     }
 
     void FixedUpdate()
@@ -34,9 +33,6 @@ public class DungeonBehavior : EnemyBehavior
                     StartCoroutine(RollCooldown());
                     StartCoroutine(Roll());
                 }
-
-                Vector2 vec = transform.position - hand.transform.position;
-                Debug.DrawLine(transform.position, new Vector2(transform.position.x + vec.normalized.x * 150, transform.position.y + vec.normalized.y * 150), Color.green);
             }
         }
     }

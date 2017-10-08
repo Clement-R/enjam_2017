@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482d1b62bc8650a48ab8383fe60a36e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeMoving: 1
+  timeBeforeMoving: 25
   aimedArea: area_2
   h: -1
   v: 0
