@@ -78,6 +78,7 @@ public class HandBehavior : MonoBehaviour {
             if (_handShadowBehavior.targetedUnitBehavior != null && !_isDragging)
             {
                 _draggedUnit = _handShadowBehavior.targetedUnitBehavior;
+
                 _draggedUnit.StopMovement();
                 Destroy(_draggedUnit.gameObject.GetComponent<Rigidbody2D>());
                 _draggedUnit.gameObject.transform.parent = this.transform;
@@ -99,10 +100,10 @@ public class HandBehavior : MonoBehaviour {
             {
                 if(_handShadowBehavior.isInGoodAreaZone)
                 {
-                    Debug.Log(_draggedUnit.name.Contains("brick"));
                     if(_draggedUnit.name.Contains("brick")) {
                         _draggedUnit.Kill();
                     } else {
+                        Debug.Log("HALLO");
                         _draggedUnit.Stun();
                     }
                 }

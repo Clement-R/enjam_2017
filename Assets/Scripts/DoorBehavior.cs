@@ -4,12 +4,4 @@ using UnityEngine;
 
 public class DoorBehavior : EnemyBehavior
 {
-
-	void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
 }

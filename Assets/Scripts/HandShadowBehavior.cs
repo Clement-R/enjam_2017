@@ -38,7 +38,7 @@ public class HandShadowBehavior : MonoBehaviour {
     {
         if(isDragging)
         {
-            if (collision.CompareTag("area_" + playerId) && collision.name.Contains(draggedUnit.name))
+            if (collision.CompareTag("area_" + playerId) && draggedUnit.name.Contains(collision.name))
             {
                 isInGoodAreaZone = true;
                 dropArea = collision.gameObject;

@@ -8,7 +8,7 @@ public class EnemyBehavior : MonoBehaviour {
     public string aimedArea = "area_1";
 
     protected bool isAttacking = false;
-    protected Rigidbody2D _rb;
+    protected Rigidbody2D _rb = null;
     protected SpriteRenderer _sr;
     protected float hMaxSpeed = 25f;
     protected float vMaxSpeed = 75f;
@@ -18,6 +18,8 @@ public class EnemyBehavior : MonoBehaviour {
     public float h = 0;
     public float v = 0;
     public float speed = 150f;
+
+    public bool isActive = false;
 
     private Coroutine _runningCoroutine = null;
 
@@ -59,7 +61,8 @@ public class EnemyBehavior : MonoBehaviour {
 
     IEnumerator StunEffect()
     {
-        // TODO : Stun effect
+        Debug.Log("STUN");
+        isActive = false;
 
         yield return new WaitForSeconds(1.5f);
 
@@ -111,8 +114,6 @@ public class EnemyBehavior : MonoBehaviour {
             direction.y = v;
             direction.Normalize();
             _rb.velocity = direction * speed;
-            
-            // _rb.velocity = new Vector2(h * hMaxSpeed, v * vMaxSpeed);
 
             yield return null;
         }
@@ -120,7 +121,11 @@ public class EnemyBehavior : MonoBehaviour {
 
     public void Release()
     {
-        gameObject.AddComponent(typeof(Rigidbody2D));
+        isActive = true;
+        if(_rb == null)
+        {
+            gameObject.AddComponent(typeof(Rigidbody2D));
+        }
         GetComponent<Rigidbody2D>().gravityScale = 0;
         GetComponent<BoxCollider2D>().enabled = true;
         transform.parent = null;

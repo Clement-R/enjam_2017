@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DebugManager : MonoBehaviour {
-    private uint lel = 0;
-
     void Update () {
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))

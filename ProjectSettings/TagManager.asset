@@ -7,6 +7,9 @@ TagManager:
   - area_1
   - area_2
   - unit_walls
+  - hand_shadow
+  - hand_1
+  - hand_2
   layers:
   - Default
   - TransparentFX
