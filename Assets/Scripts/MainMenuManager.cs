@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour {
 
-	void Start () {
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    void OnLevelWasLoaded(int level)
+    {
+        // TransitionManager.toggleTransiton();
     }
+
 }

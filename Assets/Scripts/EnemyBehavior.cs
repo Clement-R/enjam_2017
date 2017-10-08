@@ -7,6 +7,13 @@ public class EnemyBehavior : MonoBehaviour {
     public float timeBeforeMoving = 0.0f;
     public string aimedArea = "area_1";
     public float stunDuration = 2f;
+	public float stunDurationMin = 2f;
+	public float stunDurationDiminution = 2f;
+    public string side = "blue";
+
+    public string wwiseGrab = "cris_brique";
+    public string wwiseDrop = "planter_brique";
+    public bool isGrabbed = false;
 
     protected bool isAttacking = false;
     protected Rigidbody2D _rb = null;
@@ -23,12 +30,16 @@ public class EnemyBehavior : MonoBehaviour {
 
     public bool isActive = false;
 
+    private bool started = false;
     private Coroutine _runningCoroutine = null;
+    private Animator _animator;
+    private bool _isPause = false;
 
     protected void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     public void Start()
@@ -48,6 +59,8 @@ public class EnemyBehavior : MonoBehaviour {
     IEnumerator StartMoving(float timeBeforeMoving)
     {
         yield return new WaitForSeconds(timeBeforeMoving);
+        _animator.SetBool("is_walking", true);
+        started = true;
         Release();
     }
 
@@ -63,10 +76,16 @@ public class EnemyBehavior : MonoBehaviour {
 
     IEnumerator StunEffect()
     {
+        Debug.Log("STUN");
+        _animator.SetBool("is_stunned", true);
         isActive = false;
 
         yield return new WaitForSeconds(stunDuration);
 
+		if (stunDuration > stunDurationMin)
+			stunDuration -= stunDurationDiminution;
+        
+        _animator.SetBool("is_stunned", false);
         Release();
     }
 
@@ -74,25 +93,49 @@ public class EnemyBehavior : MonoBehaviour {
     {
         if(collision.CompareTag(aimedArea))
         {
-            Debug.Log("Area reached !");
+            if (side == "blue")
+            {
+                EventManager.TriggerEvent("blueWin");
+            }
+            else
+            {
+                EventManager.TriggerEvent("redWin");
+            }
+
             EventManager.TriggerEvent("gameEnd");
         }
     }
 
-    void OnPause()
+    protected void OnPause()
     {
-        Debug.Log("PAUSE");
         StopMovement();
+        _isPause = true;
+        if(_rb != null)
+        {
+            _rb.simulated = false;
+        }
     }
 
-    void OnResume()
+    protected void OnResume()
     {
-        Debug.Log("RESUME");
-        OnLaunch();
+        _rb.simulated = true;
+        _isPause = false;
+        if (started)
+        {
+            OnLaunch();
+        }
     }
 
-    void OnEnd()
+    protected void OnEnd()
     {
+        if(_rb != null)
+        {
+            _rb.simulated = false;
+        } else
+        {
+            Destroy(this.gameObject);
+        }
+        
         StopMovement();
     }
 
@@ -109,7 +152,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     protected IEnumerator Run()
     {
-        while (!isAttacking)
+        while (!isAttacking && !_isPause)
         {
             Vector2 direction = new Vector2(0, 0);
             direction.x = h;
@@ -121,9 +164,28 @@ public class EnemyBehavior : MonoBehaviour {
         }
     }
 
+    public void Grab()
+    {
+        isGrabbed = true;
+
+        _animator.SetBool("is_walking", false);
+        _animator.SetBool("is_grabbed", true);
+
+        AkSoundEngine.PostEvent(wwiseGrab, gameObject);
+    }
+
+    public void Drop()
+    {
+        isGrabbed = false;
+        Debug.Log("DROPPED");
+        _animator.SetBool("is_grabbed", false);
+        AkSoundEngine.PostEvent(wwiseDrop, gameObject);
+    }
+
     public void Release()
     {
         isActive = true;
+
         if(_rb == null)
         {
             gameObject.AddComponent(typeof(Rigidbody2D));

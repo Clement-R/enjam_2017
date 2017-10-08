@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50761011447056294}
   - component: {fileID: 61075793214195932}
   - component: {fileID: 114333459758064940}
+  - component: {fileID: 95152715528428540}
   m_Layer: 12
   m_Name: tower_small_2
   m_TagString: Untagged
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61075793214195932
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -88,6 +89,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 35, y: 48}
   m_EdgeRadius: 0
+--- !u!95 &95152715528428540
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1279092923488546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c45b0293225d36b43aadeefc47541a3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114333459758064940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,15 +117,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c91226de6873c334abc0191785c02a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeMoving: 25
+  timeBeforeMoving: 16
   aimedArea: area_1
+  stunDuration: 4.5
+  stunDurationMin: 1
+  stunDurationDiminution: 0.4
+  wwiseGrab: cris_tourelle
+  wwiseDrop: planter_tourelle
+  isGrabbed: 0
+  type: 
   h: 1
   v: 0
-  speed: 75
+  speed: 25
   isActive: 0
-  sprintCooldown: 5
-  sprintDuration: 1
-  sprintSpeedMultiplier: 2
+  sprintCooldown: 4
+  sprintDuration: 3
+  sprintSpeedMultiplier: 2.75
 --- !u!212 &212437468635076416
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -138,7 +163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1486399321
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a1a7f99a4635dab4c80b2a5cae5b9b66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

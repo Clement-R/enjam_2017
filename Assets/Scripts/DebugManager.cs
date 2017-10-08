@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DebugManager : MonoBehaviour {
+    private float time;
+
     void Update () {
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))
@@ -51,11 +53,52 @@ public class DebugManager : MonoBehaviour {
         {
             AkSoundEngine.SetSwitch("Main_switch", "transition3", gameObject);
         }
-#endif
 
         if (Input.GetKeyDown("m"))
         {
-            TransitionManager.toggleTransiton();
+            // TransitionManager.toggleTransiton();
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("MDR");
+            AkSoundEngine.PostEvent("lancement_partie", gameObject);
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            AkSoundEngine.PostEvent("music_menu", gameObject);
+        }
+
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            StartCoroutine(LaunchSong());
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            EventManager.TriggerEvent("gameEnd");
+        }
+#endif
+    }
+
+    IEnumerator LaunchSong()
+    {
+        AkSoundEngine.SetSwitch("Main_switch", "boucle1", gameObject);
+        yield return new WaitForSeconds(3f);
+
+        AkSoundEngine.PostEvent("Main_switch", gameObject);
+        yield return new WaitForSeconds(5f);
+        AkSoundEngine.SetSwitch("Main_switch", "transition1", gameObject);
+        yield return new WaitForSeconds(22f);
+        AkSoundEngine.SetSwitch("Main_switch", "boucle2", gameObject);
+        yield return new WaitForSeconds(18f);
+        AkSoundEngine.SetSwitch("Main_switch", "transition2", gameObject);
+        yield return new WaitForSeconds(15f);
+        AkSoundEngine.SetSwitch("Main_switch", "boucle3", gameObject);
+        yield return new WaitForSeconds(15f);
+        AkSoundEngine.SetSwitch("Main_switch", "transition3", gameObject);
+        yield return new WaitForSeconds(10f);
+        AkSoundEngine.SetSwitch("Main_switch", "boucle4", gameObject);
     }
 }

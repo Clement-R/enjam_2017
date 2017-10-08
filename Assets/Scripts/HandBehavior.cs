@@ -79,7 +79,9 @@ public class HandBehavior : MonoBehaviour {
             {
                 _draggedUnit = _handShadowBehavior.targetedUnitBehavior;
 
+                _draggedUnit.Grab();
                 _draggedUnit.StopMovement();
+
                 Destroy(_draggedUnit.gameObject.GetComponent<Rigidbody2D>());
                 _draggedUnit.gameObject.transform.parent = this.transform;
                 _draggedUnit.gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -98,20 +100,22 @@ public class HandBehavior : MonoBehaviour {
             // If we were dragging a unit and we drop it
             if(_isDragging)
             {
-                if(_handShadowBehavior.isInGoodAreaZone)
+                if (_handShadowBehavior.isInGoodAreaZone)
                 {
-                    if(_draggedUnit.name.Contains("brick")) {
+                    if (_draggedUnit.name.Contains("brick")) {
+                        AkSoundEngine.PostEvent("planter_valide", Camera.main.gameObject);
                         _draggedUnit.Kill();
                     }
                     else if (_draggedUnit.type == "menu_unit")
                     {
+                        AkSoundEngine.PostEvent("planter_valide", Camera.main.gameObject);
                         _draggedUnit.GetComponent<SpriteRenderer>().flipX = false;
                         _draggedUnit.StopMovement();
                         EventManager.TriggerEvent("unitMenuDrop");
                     }
                     else if (_draggedUnit.type == "main_menu_unit")
                     {
-                        Debug.Log("Drop da unit");
+                        AkSoundEngine.PostEvent("planter_valide", Camera.main.gameObject);
                         _draggedUnit.GetComponent<SpriteRenderer>().flipX = false;
                         _draggedUnit.StopMovement();
                         EventManager.TriggerEvent(_handShadowBehavior.dropArea.GetComponent<UiTrigger>().eventToListen);
@@ -132,6 +136,8 @@ public class HandBehavior : MonoBehaviour {
                         _draggedUnit.Release();
                     }
                 }
+
+                _draggedUnit.Drop();
 
                 // Reset the parent to avoid that the stun unit follow our hand
                 _draggedUnit.gameObject.transform.parent = null;

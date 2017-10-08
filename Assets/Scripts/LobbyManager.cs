@@ -7,7 +7,12 @@ public class LobbyManager : MonoBehaviour {
 
     private int _nbrOfDrops = 0;
 
-	void Start () {
+    void OnLevelWasLoaded(int level)
+    {
+        // TransitionManager.toggleTransiton();
+    }
+
+    void Start () {
         EventManager.StartListening("unitMenuDrop", OnDrop);
     }
 	
@@ -17,8 +22,16 @@ public class LobbyManager : MonoBehaviour {
 
         if(_nbrOfDrops == 2)
         {
+            // TransitionManager.toggleTransiton();
+            // StartCoroutine(LaunchGame());
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+    }
+
+    IEnumerator LaunchGame()
+    {
+        yield return new WaitForSeconds(TransitionManager.timeToMove);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnDestroy()

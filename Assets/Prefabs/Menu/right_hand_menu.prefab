@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 1149667085479898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1286.4, y: -16.2, z: 0}
-  m_LocalScale: {x: 0.44064, y: 0.26484, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4618534770659102}
   m_RootOrder: 1
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641560553038230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1512, y: -103, z: 0}
+  m_LocalPosition: {x: 1505, y: 41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4800028467872342}
@@ -140,7 +140,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 128, y: 64}
+    oldSize: {x: 85, y: 17}
     newSize: {x: 128, y: 64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -209,8 +209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerId: 1
   handShadow: {fileID: 1149667085479898}
-  handIdle: {fileID: 21300000, guid: f6da6937af0219140ab95d808fd546c3, type: 3}
-  handPick: {fileID: 21300000, guid: 85081ad67e070b24e9f8ead9927be6db, type: 3}
+  handIdle: {fileID: 21300000, guid: 8fd758753343f6949970fe04a06118f6, type: 3}
+  handPick: {fileID: 21300000, guid: c3ce883fccb8f6c48a72a811ca7ed3f3, type: 3}
   shadowX: 25
   shadowY: 75
   hMaxSpeed: 350
@@ -245,9 +245,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 611723355
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6da6937af0219140ab95d808fd546c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8fd758753343f6949970fe04a06118f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_SortingLayerID: -1171078847
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed8a9c5b70467dc4d95e9335cb8a3237, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5484a48d064b361418570271e7de5231, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

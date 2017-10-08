@@ -23,7 +23,7 @@ public class TrooperBehavior : EnemyBehavior
         EventManager.StopListening("trooperLaunch", OnLaunch);
     }
 
-   void FixedUpdate()
+    void FixedUpdate()
     {
         if(_rb != null)
         {

@@ -40,6 +40,9 @@ public class DungeonBehavior : EnemyBehavior
     IEnumerator Roll()
     {
         StopMovement();
+
+        AkSoundEngine.PostEvent("grab_refus", gameObject);
+
         Vector2 vec = transform.position - hand.transform.position;
         vec.Normalize();
 

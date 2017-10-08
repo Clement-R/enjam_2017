@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50169508316211230}
   - component: {fileID: 61009420627398794}
   - component: {fileID: 114179345146726032}
+  - component: {fileID: 95734398698525164}
   m_Layer: 11
   m_Name: door_1
   m_TagString: Untagged
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61009420627398794
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -88,6 +89,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17, y: 17}
   m_EdgeRadius: 0
+--- !u!95 &95734398698525164
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869208723610496}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0a278086cfe63445bea30dea6b1742c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114179345146726032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,11 +117,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cdcc0ca05540324db4a7f789cf3593d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeMoving: 9
+  timeBeforeMoving: 4
   aimedArea: area_2
+  stunDuration: 3
+  stunDurationMin: 1
+  stunDurationDiminution: 0.4
+  wwiseGrab: cris_porte
+  wwiseDrop: planter_porte
+  isGrabbed: 0
+  type: 
   h: -1
   v: 0
   speed: 25
+  isActive: 0
 --- !u!212 &212910214163543642
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -134,7 +160,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1486399321
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b180441187bc0e42b33530464aeab01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

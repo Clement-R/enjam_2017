@@ -32,6 +32,7 @@ public class TowerBehavior : EnemyBehavior
 
     IEnumerator Sprint()
     {
+        AkSoundEngine.PostEvent("grab_refus", gameObject);
         speed = speed * sprintSpeedMultiplier;
         yield return new WaitForSeconds(sprintDuration);
         speed = _baseSpeed;

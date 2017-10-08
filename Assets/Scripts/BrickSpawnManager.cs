@@ -6,6 +6,10 @@ public class BrickSpawnManager : MonoBehaviour {
     public BrickSpawner[] spawners;
     public int activeSpawners = 1;
     public float timerBeforeSpawn = 2.0f;
+	public float timerBeforeSpawnMin = 2.0f;
+	public float timerBeforeSpawnDiminution = 2.0f;
+
+    private bool _isPaused = false;
 
     void Start () {
         StartCoroutine(SpawnBrick());
@@ -17,6 +21,11 @@ public class BrickSpawnManager : MonoBehaviour {
 
     IEnumerator SpawnBrick()
     {
+        while(_isPaused)
+        {
+            yield return null;
+        }
+        
         // Get random spawner
         for (int i = 0; i < activeSpawners; i++)
         {
@@ -25,23 +34,24 @@ public class BrickSpawnManager : MonoBehaviour {
         }
         
         yield return new WaitForSeconds(timerBeforeSpawn);
+
+		if (timerBeforeSpawn > timerBeforeSpawnMin)
+			timerBeforeSpawn -= timerBeforeSpawnDiminution;
         StartCoroutine(SpawnBrick());
     }
 
     void OnPause()
     {
-        Debug.Log("PAUSE");
-        Time.timeScale = 0.0f;
+        _isPaused = true;
     }
 
     void OnResume()
     {
-        Debug.Log("RESUME");
-        Time.timeScale = 1.0f;
+        _isPaused = false;
     }
 
     void OnEnd()
     {
-        Time.timeScale = 0.0f;
+        _isPaused = true;
     }
 }

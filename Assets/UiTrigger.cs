@@ -19,8 +19,9 @@ public class UiTrigger : MonoBehaviour {
 
     void Play()
     {
-        TransitionManager.toggleTransiton();
-        StartCoroutine(LaunchPlay());
+        // TransitionManager.toggleTransiton();
+        // StartCoroutine(LaunchPlay());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator LaunchPlay()
@@ -31,8 +32,9 @@ public class UiTrigger : MonoBehaviour {
 
     void Credits()
     {
-        TransitionManager.toggleTransiton();
-        StartCoroutine(LaunchCredits());
+        // TransitionManager.toggleTransiton();
+        // StartCoroutine(LaunchCredits());
+        SceneManager.LoadScene("credits");
     }
 
     IEnumerator LaunchCredits()

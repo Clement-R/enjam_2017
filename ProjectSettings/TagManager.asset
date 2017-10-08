@@ -74,3 +74,6 @@ TagManager:
   - name: transition
     uniqueID: 1180898475
     locked: 0
+  - name: pause
+    uniqueID: 1988788451
+    locked: 0

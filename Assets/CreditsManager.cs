@@ -7,6 +7,11 @@ public class CreditsManager : MonoBehaviour {
 
     public List<string> inputs;
 
+    void OnLevelWasLoaded(int level)
+    {
+        // TransitionManager.toggleTransiton();
+    }
+
     private void Start()
     {
         inputs.Add("A_1");
@@ -33,8 +38,16 @@ public class CreditsManager : MonoBehaviour {
         {
             if(Input.GetButtonDown(input))
             {
+                // TransitionManager.toggleTransiton();
+                // StartCoroutine(ReturnToMenu());
                 SceneManager.LoadScene("main_menu");
             }
         }
 	}
+
+    IEnumerator ReturnToMenu()
+    {
+        yield return new WaitForSeconds(TransitionManager.timeToMove);
+        SceneManager.LoadScene("main_menu");
+    }
 }
