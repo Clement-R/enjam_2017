@@ -1,0 +1,454 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1eb505ce652744692bb179a5438a43, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B62D9A22-40A9-4E8A-BF93-1CEC3653CB14}'
+    m_lastTimePsrt1: -1391233428
+    m_lastTimePart2: -1999302941
+    List:
+    - Name: cris_brique
+      Path: Default Work Unit\cris_brique
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: cris_brique
+        ObjectType: 3
+      ID: 1106303317
+      Guid: 7829b0f78053d644ac8776e5718e7100
+      maxAttenuation: 0
+    - Name: cris_donjon
+      Path: Default Work Unit\cris_donjon
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: cris_donjon
+        ObjectType: 3
+      ID: 816215237
+      Guid: e51f5b45eefc5240a02f5fed0847a560
+      maxAttenuation: 0
+    - Name: cris_porte
+      Path: Default Work Unit\cris_porte
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: cris_porte
+        ObjectType: 3
+      ID: 906503409
+      Guid: ff19c84810c0d142a72dfb88abd9c94f
+      maxAttenuation: 0
+    - Name: cris_tourelle
+      Path: Default Work Unit\cris_tourelle
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: cris_tourelle
+        ObjectType: 3
+      ID: 1625761889
+      Guid: 4b9710daf222314d9756e6e55f7747e8
+      maxAttenuation: 0
+    - Name: decompte
+      Path: Default Work Unit\decompte
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: decompte
+        ObjectType: 3
+      ID: 907941424
+      Guid: 6a995b1d1da9af49a5276a977e2775cf
+      maxAttenuation: 0
+    - Name: end
+      Path: Default Work Unit\end
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: end
+        ObjectType: 3
+      ID: 529726532
+      Guid: 4659557a92bbad4bb04327c1cbb923e0
+      maxAttenuation: 0
+    - Name: grab_refus
+      Path: Default Work Unit\grab_refus
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: grab_refus
+        ObjectType: 3
+      ID: -695629579
+      Guid: 1d46d85d302db046a31da061e09898ad
+      maxAttenuation: 0
+    - Name: lancement_partie
+      Path: Default Work Unit\lancement_partie
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: lancement_partie
+        ObjectType: 3
+      ID: 201215868
+      Guid: a5c93116df7bc143b5c98683da63e6d3
+      maxAttenuation: 0
+    - Name: Main_switch
+      Path: Default Work Unit\Main_switch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_switch
+        ObjectType: 3
+      ID: -2013930239
+      Guid: 483ebae1ad316c46920eff7f9c1b540f
+      maxAttenuation: 0
+    - Name: main_theme
+      Path: Default Work Unit\main_theme
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: main_theme
+        ObjectType: 3
+      ID: -1737189740
+      Guid: eaf1e5378adcd047b36697ed0b1da938
+      maxAttenuation: 0
+    - Name: menu_pause
+      Path: Default Work Unit\menu_pause
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_pause
+        ObjectType: 3
+      ID: -2124957321
+      Guid: 821fc9980e4c8e4f863e09dd7d71e508
+      maxAttenuation: 0
+    - Name: menu_reprendre
+      Path: Default Work Unit\menu_reprendre
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_reprendre
+        ObjectType: 3
+      ID: 887437758
+      Guid: a3bcffc10699d0428720a4631779ba1d
+      maxAttenuation: 0
+    - Name: menu_select
+      Path: Default Work Unit\menu_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_select
+        ObjectType: 3
+      ID: -91591945
+      Guid: 345da02d2575964dbdf824d29c57eec2
+      maxAttenuation: 0
+    - Name: menu_survoler
+      Path: Default Work Unit\menu_survoler
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_survoler
+        ObjectType: 3
+      ID: 881021703
+      Guid: abf48a68b68a5e489e048af7202d3d0a
+      maxAttenuation: 0
+    - Name: music_menu
+      Path: Default Work Unit\music_menu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_menu
+        ObjectType: 3
+      ID: 1598298728
+      Guid: bba525cd7e1652469e84175a8bc9da96
+      maxAttenuation: 0
+    - Name: planter_brique
+      Path: Default Work Unit\planter_brique
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: planter_brique
+        ObjectType: 3
+      ID: 1524595556
+      Guid: 2b730ea9d774524ebe406e0633fcf80d
+      maxAttenuation: 0
+    - Name: planter_donjon
+      Path: Default Work Unit\planter_donjon
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: planter_donjon
+        ObjectType: 3
+      ID: -1422414676
+      Guid: e93e1e8ab3261a4cbabdfb8365002365
+      maxAttenuation: 0
+    - Name: planter_porte
+      Path: Default Work Unit\planter_porte
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: planter_porte
+        ObjectType: 3
+      ID: 2144679850
+      Guid: 6c9d4698c8d4924990ddb46ab32af1c2
+      maxAttenuation: 0
+    - Name: planter_tourelle
+      Path: Default Work Unit\planter_tourelle
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: planter_tourelle
+        ObjectType: 3
+      ID: -762940044
+      Guid: f31dc2b34da7f546842b27ea63cbdc33
+      maxAttenuation: 0
+    - Name: planter_valide
+      Path: Default Work Unit\planter_valide
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: planter_valide
+        ObjectType: 3
+      ID: 586085171
+      Guid: ebef6a873a73494488ae9cc9ed8b70b3
+      maxAttenuation: 0
+    - Name: quitter_menu_pause
+      Path: Default Work Unit\quitter_menu_pause
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: quitter_menu_pause
+        ObjectType: 3
+      ID: -1398019150
+      Guid: 577f96ab510e754ab364c199a0d019aa
+      maxAttenuation: 0
+    - Name: revenir_main_menu
+      Path: Default Work Unit\revenir_main_menu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: revenir_main_menu
+        ObjectType: 3
+      ID: -232183502
+      Guid: cd42a36a11e7bd43a7dac02079d51af0
+      maxAttenuation: 0
+    - Name: transition_menu
+      Path: Default Work Unit\transition_menu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: transition_menu
+        ObjectType: 3
+      ID: 445527014
+      Guid: a377a5934a6e33478fe45a9c9e07b9b8
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{2F49612C-A92C-4DAC-88E5-18EAE55F3784}'
+    m_lastTimePsrt1: -1389406680
+    m_lastTimePart2: -1999302941
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{42F4349A-EA7D-40FB-BAB0-09BD52ACC62F}'
+    m_lastTimePsrt1: -1366559860
+    m_lastTimePart2: -1999302941
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E76B4367-4FF2-4CD0-9EDB-0A3035EF6112}'
+    m_lastTimePsrt1: -1366554857
+    m_lastTimePart2: -1999302941
+    List:
+    - Name: main_switch
+      Path: Default Work Unit\main_switch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: main_switch
+        ObjectType: 11
+      ID: -2013930239
+      Guid: 819976a5303ee14390a07579153ad4c5
+      values:
+      - boucle1
+      - boucle2
+      - boucle3
+      - boucle4
+      - transition1
+      - transition2
+      - transition3
+      ValueIcons:
+      - ElementName: boucle1
+        ObjectType: 10
+      - ElementName: boucle2
+        ObjectType: 10
+      - ElementName: boucle3
+        ObjectType: 10
+      - ElementName: boucle4
+        ObjectType: 10
+      - ElementName: transition1
+        ObjectType: 10
+      - ElementName: transition2
+        ObjectType: 10
+      - ElementName: transition3
+        ObjectType: 10
+      valueIDs: febcb8a5fdbcb8a5fcbcb8a5fbbcb8a5e18e2303e28e2303e38e2303
+      ValueGuids:
+      - bytes: 9e1b1a2585ba2a4ca1b53acf862488dc
+      - bytes: 51b9db5488cdf54693ed86e74f397e42
+      - bytes: 69bac8fb311cad45ae7f423e376fff30
+      - bytes: aecc297587468f4f8696a51c507d15b0
+      - bytes: 4417018ad60fe443bd1bf5ced22b96fe
+      - bytes: 64626db14e269a4dbd8f510858779fe3
+      - bytes: ed5bf17c14230a4ebedc0387fccd531e
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{9773F4D3-9B20-4BA1-9A06-F60879BBB2D0}'
+    m_lastTimePsrt1: -1366564866
+    m_lastTimePart2: -1999302941
+    List:
+    - Name: New_SoundBank
+      Path: Default Work Unit\New_SoundBank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_SoundBank
+        ObjectType: 7
+      ID: -222937841
+      Guid: fd5fc5d389525f4cb206f8dd315b59e0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{08E49663-1AB3-4C6A-A516-BE11EC344219}'
+    m_lastTimePsrt1: -1391228428
+    m_lastTimePart2: -1999302941
+    List: []
+  - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
+    ParentPhysicalPath: 
+    Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
+    m_lastTimePsrt1: -1391228428
+    m_lastTimePart2: -1999302941
+    List:
+    - Name: SS_Air_Fear
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fear
+        ObjectType: 13
+      ID: 1351367891
+      Guid: 59062ef746431c4ea1b1dab46a05101e
+    - Name: SS_Air_Freefall
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Freefall
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Freefall
+        ObjectType: 13
+      ID: -1292209176
+      Guid: 37fe2d2f9e4f944d83d853cca39781ad
+    - Name: SS_Air_Fury
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fury
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fury
+        ObjectType: 13
+      ID: 1029930033
+      Guid: dc79aea23acaba4696529986c322a87b
+    - Name: SS_Air_Month
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Month
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Month
+        ObjectType: 13
+      ID: -1646418679
+      Guid: 45b4e209a3c47f44b3ca818a1d925ef7
+    - Name: SS_Air_Presence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Presence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Presence
+        ObjectType: 13
+      ID: -447042342
+      Guid: 1a81b7e32f7b0f49b44f5fe51b468041
+    - Name: SS_Air_RPM
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_RPM
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_RPM
+        ObjectType: 13
+      ID: 822163944
+      Guid: ab9048a3d5b92645a64d5290c43ef2dc
+    - Name: SS_Air_Size
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Size
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Size
+        ObjectType: 13
+      ID: -1220270574
+      Guid: efeb291393a12e47a38c64668b494879
+    - Name: SS_Air_Storm
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Storm
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Storm
+        ObjectType: 13
+      ID: -579304704
+      Guid: db8c3fe9d1063747acaf7cd44bbed783
+    - Name: SS_Air_TimeOfDay
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_TimeOfDay
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_TimeOfDay
+        ObjectType: 13
+      ID: -1091570167
+      Guid: 2ca76f537e8c8b4cae03ef34fdadc314
+    - Name: SS_Air_Turbulence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Turbulence
+        ObjectType: 13
+      ID: -134719478
+      Guid: 197ba8edaa73a0409f192073606db710
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{61B91250-BDE5-4A8E-B538-4157EF470568}'
+    m_lastTimePsrt1: -1366554857
+    m_lastTimePart2: -1999302941
+    List: []
+  ExpandedItems:
+  - /ENJAM 2017
+  - /ENJAM 2017/Events
+  - /ENJAM 2017/Events/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

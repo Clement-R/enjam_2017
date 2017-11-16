@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>E:\_Dev\Gamedev\enjam_2017\ENJAM2017\</ProjectRoot>
+		<SourceFilesRoot>E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\_Dev\Gamedev\enjam_2017\ENJAM2017\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\_Dev\Gamedev\enjam_2017\ENJAM2017\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4072029455" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
+			<ShortName>New_SoundBank</ShortName>
+			<Path>New_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1106303317" Name="cris_brique" ObjectPath="\Events\Default Work Unit\cris_brique"/>
+				<Event Id="816215237" Name="cris_donjon" ObjectPath="\Events\Default Work Unit\cris_donjon"/>
+				<Event Id="906503409" Name="cris_porte" ObjectPath="\Events\Default Work Unit\cris_porte"/>
+				<Event Id="1625761889" Name="cris_tourelle" ObjectPath="\Events\Default Work Unit\cris_tourelle"/>
+				<Event Id="907941424" Name="decompte" ObjectPath="\Events\Default Work Unit\decompte"/>
+				<Event Id="529726532" Name="end" ObjectPath="\Events\Default Work Unit\end"/>
+				<Event Id="3599337717" Name="grab_refus" ObjectPath="\Events\Default Work Unit\grab_refus"/>
+				<Event Id="201215868" Name="lancement_partie" ObjectPath="\Events\Default Work Unit\lancement_partie"/>
+				<Event Id="2281037057" Name="Main_switch" ObjectPath="\Events\Default Work Unit\Main_switch"/>
+				<Event Id="2557777556" Name="main_theme" ObjectPath="\Events\Default Work Unit\main_theme"/>
+				<Event Id="2170009975" Name="menu_pause" ObjectPath="\Events\Default Work Unit\menu_pause"/>
+				<Event Id="887437758" Name="menu_reprendre" ObjectPath="\Events\Default Work Unit\menu_reprendre"/>
+				<Event Id="4203375351" Name="menu_select" ObjectPath="\Events\Default Work Unit\menu_select"/>
+				<Event Id="881021703" Name="menu_survoler" ObjectPath="\Events\Default Work Unit\menu_survoler"/>
+				<Event Id="1598298728" Name="music_menu" ObjectPath="\Events\Default Work Unit\music_menu"/>
+				<Event Id="1524595556" Name="planter_brique" ObjectPath="\Events\Default Work Unit\planter_brique"/>
+				<Event Id="2872552620" Name="planter_donjon" ObjectPath="\Events\Default Work Unit\planter_donjon"/>
+				<Event Id="2144679850" Name="planter_porte" ObjectPath="\Events\Default Work Unit\planter_porte"/>
+				<Event Id="3532027252" Name="planter_tourelle" ObjectPath="\Events\Default Work Unit\planter_tourelle"/>
+				<Event Id="586085171" Name="planter_valide" ObjectPath="\Events\Default Work Unit\planter_valide"/>
+				<Event Id="2896948146" Name="quitter_menu_pause" ObjectPath="\Events\Default Work Unit\quitter_menu_pause"/>
+				<Event Id="4062783794" Name="revenir_main_menu" ObjectPath="\Events\Default Work Unit\revenir_main_menu"/>
+				<Event Id="445527014" Name="transition_menu" ObjectPath="\Events\Default Work Unit\transition_menu"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="48086128" Language="SFX">
+					<ShortName>Musique interactive\boucle4_var4 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle4_var4 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="99168243" Language="SFX">
+					<ShortName>Musique interactive\boucle1_var1 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle1_var1 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="112926756" Language="SFX">
+					<ShortName>cris_porte -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\cris_porte -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="134770253" Language="SFX">
+					<ShortName>Musique interactive\boucle1_var2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle1_var2 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="167060190" Language="SFX">
+					<ShortName>cris_brique -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\cris_brique -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="235895636" Language="SFX">
+					<ShortName>cris_donjon -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\cris_donjon -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="328889846" Language="SFX">
+					<ShortName>cris_tourelle -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\cris_tourelle -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="330842079" Language="SFX">
+					<ShortName>end -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\end -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="370601837" Language="SFX">
+					<ShortName>ambiance -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\ambiance -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="370922390" Language="SFX">
+					<ShortName>planter_brique -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\planter_brique -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="407120348" Language="SFX">
+					<ShortName>Musique interactive\transition2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\transition2 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="422764688" Language="SFX">
+					<ShortName>menu_survoler -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\menu_survoler -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="428767888" Language="SFX">
+					<ShortName>Musique interactive\boucle2_var3 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle2_var3 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="436869122" Language="SFX">
+					<ShortName>boucle4_var3 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\boucle4_var3 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="440931681" Language="SFX">
+					<ShortName>Musique interactive\boucle2_var1 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle2_var1 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="448506503" Language="SFX">
+					<ShortName>planter_valide -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\planter_valide -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="482645894" Language="SFX">
+					<ShortName>Musique interactive\boucle4_var2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle4_var2 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="501642026" Language="SFX">
+					<ShortName>music_menu_intro -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\music_menu_intro -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="545890273" Language="SFX">
+					<ShortName>Musique interactive\transition3 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\transition3 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="553384573" Language="SFX">
+					<ShortName>music_victoire -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\music_victoire -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="622436063" Language="SFX">
+					<ShortName>Musique interactive\intro -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\intro -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="665629223" Language="SFX">
+					<ShortName>planter_donjon -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\planter_donjon -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="685369738" Language="SFX">
+					<ShortName>boucle3_var2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\boucle3_var2 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="716199755" Language="SFX">
+					<ShortName>boucle3_var1 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\boucle3_var1 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="752543143" Language="SFX">
+					<ShortName>music_menu -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\music_menu -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="763405861" Language="SFX">
+					<ShortName>decompte -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\decompte -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="764423181" Language="SFX">
+					<ShortName>Musique interactive\boucle2_var2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle2_var2 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="794781947" Language="SFX">
+					<ShortName>Musique interactive\transition1 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\transition1 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="801133868" Language="SFX">
+					<ShortName>grab_refus -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\grab_refus -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="841572730" Language="SFX">
+					<ShortName>boucle4_var1 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\boucle4_var1 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="887538408" Language="SFX">
+					<ShortName>transition_menu -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\transition_menu -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="920937923" Language="SFX">
+					<ShortName>planter_porte -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\planter_porte -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="947684515" Language="SFX">
+					<ShortName>Musique interactive\boucle3_var3 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle3_var3 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="992596242" Language="SFX">
+					<ShortName>end2 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\end2 -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="1030898658" Language="SFX">
+					<ShortName>planter_tourelle -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\planter_tourelle -  - Sortie - Stereo Out_DF995010.wem</Path>
+				</File>
+				<File Id="1034124390" Language="SFX">
+					<ShortName>Musique interactive\boucle3_var4 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\Musique interactive\boucle3_var4 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+				<File Id="1056592143" Language="SFX">
+					<ShortName>boucle4_var5 -  - Sortie - Stereo Out.wav</ShortName>
+					<Path>SFX\boucle4_var5 -  - Sortie - Stereo Out_9511B34A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

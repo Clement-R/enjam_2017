@@ -1,0 +1,68 @@
+Event	ID	Name			Wwise Object Path	Notes
+	201215868	lancement_partie			\Default Work Unit\lancement_partie	
+	445527014	transition_menu			\Default Work Unit\transition_menu	
+	529726532	end			\Default Work Unit\end	
+	586085171	planter_valide			\Default Work Unit\planter_valide	
+	816215237	cris_donjon			\Default Work Unit\cris_donjon	
+	881021703	menu_survoler			\Default Work Unit\menu_survoler	
+	887437758	menu_reprendre			\Default Work Unit\menu_reprendre	
+	906503409	cris_porte			\Default Work Unit\cris_porte	
+	907941424	decompte			\Default Work Unit\decompte	
+	1106303317	cris_brique			\Default Work Unit\cris_brique	
+	1524595556	planter_brique			\Default Work Unit\planter_brique	
+	1598298728	music_menu			\Default Work Unit\music_menu	
+	1625761889	cris_tourelle			\Default Work Unit\cris_tourelle	
+	2144679850	planter_porte			\Default Work Unit\planter_porte	
+	2170009975	menu_pause			\Default Work Unit\menu_pause	
+	2281037057	Main_switch			\Default Work Unit\Main_switch	
+	2557777556	main_theme			\Default Work Unit\main_theme	
+	2872552620	planter_donjon			\Default Work Unit\planter_donjon	
+	2896948146	quitter_menu_pause			\Default Work Unit\quitter_menu_pause	
+	3532027252	planter_tourelle			\Default Work Unit\planter_tourelle	
+	3599337717	grab_refus			\Default Work Unit\grab_refus	
+	4062783794	revenir_main_menu			\Default Work Unit\revenir_main_menu	
+	4203375351	menu_select			\Default Work Unit\menu_select	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	48086128	boucle4_var4 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle4_var4 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\main_switch\boucle4_var4 -  - Sortie - Stereo Out\boucle4_var4 -  - Sortie - Stereo Out		393532
+	99168243	boucle1_var1 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle1_var1 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle1\boucle1_random\boucle1_var1 -  - Sortie - Stereo Out\boucle1_var1 -  - Sortie - Stereo Out		403515
+	112926756	cris_porte -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\cris_porte -  - Sortie - Stereo Out_9511B34A.wem		\Actor-Mixer Hierarchy\Default Work Unit\cris_porte -  - Sortie - Stereo Out		785285
+	134770253	boucle1_var2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle1_var2 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle1\boucle1_random\boucle1_var2 -  - Sortie - Stereo Out\boucle1_var2 -  - Sortie - Stereo Out		399273
+	167060190	cris_brique -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\cris_brique -  - Sortie - Stereo Out_9511B34A.wem		\Actor-Mixer Hierarchy\Default Work Unit\cris_brique -  - Sortie - Stereo Out		499362
+	235895636	cris_donjon -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\cris_donjon -  - Sortie - Stereo Out_9511B34A.wem		\Actor-Mixer Hierarchy\Default Work Unit\cris_donjon -  - Sortie - Stereo Out		581574
+	328889846	cris_tourelle -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\cris_tourelle -  - Sortie - Stereo Out_9511B34A.wem		\Actor-Mixer Hierarchy\Default Work Unit\cris_tourelle -  - Sortie - Stereo Out		620731
+	330842079	end -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\end -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\end -  - Sortie - Stereo Out		13091
+	370601837	ambiance -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\ambiance -  - Sortie - Stereo Out_9511B34A.wem		\Actor-Mixer Hierarchy\Default Work Unit\ambiance -  - Sortie - Stereo Out		2092567
+	370922390	planter_brique -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\planter_brique -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\menu_select\planter_brique -  - Sortie - Stereo Out		12313
+	407120348	transition2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\transition2 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle3\transition2 -  - Sortie - Stereo Out\transition2 -  - Sortie - Stereo Out		520794
+	422764688	menu_survoler -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\menu_survoler -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\menu_survoler -  - Sortie - Stereo Out		9397
+	428767888	boucle2_var3 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle2_var3 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle2\boucle2_random\boucle2_var3 -  - Sortie - Stereo Out\boucle2_var3 -  - Sortie - Stereo Out		494068
+	436869122	boucle4_var3 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\boucle4_var3 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\main_switch\boucle4_var3 -  - Sortie - Stereo Out\boucle4_var3 -  - Sortie - Stereo Out		431379
+	440931681	boucle2_var1 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle2_var1 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle2\boucle2_random\boucle2_var1 -  - Sortie - Stereo Out\boucle2_var1 -  - Sortie - Stereo Out		425142
+	448506503	planter_valide -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\planter_valide -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\planter_valide -  - Sortie - Stereo Out		38111
+	482645894	boucle4_var2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle4_var2 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\main_switch\boucle4_var2 -  - Sortie - Stereo Out\boucle4_var2 -  - Sortie - Stereo Out		426546
+	501642026	music_menu_intro -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\music_menu_intro -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\menu\music_menu_intro -  - Sortie - Stereo Out\music_menu_intro -  - Sortie - Stereo Out		473127
+	545890273	transition3 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\transition3 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle4\transition3 -  - Sortie - Stereo Out\transition3 -  - Sortie - Stereo Out		504787
+	553384573	music_victoire -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\music_victoire -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\music_victoire\music_victoire -  - Sortie - Stereo Out\music_victoire -  - Sortie - Stereo Out		510012
+	622436063	intro -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\intro -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle1\boucle1_random\boucle1_var1 -  - Sortie - Stereo Out\intro -  - Sortie - Stereo Out		260640
+	665629223	planter_donjon -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\planter_donjon -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\planter_donjon -  - Sortie - Stereo Out		28602
+	685369738	boucle3_var2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\boucle3_var2 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle3\boucle3_random\boucle3_var2 -  - Sortie - Stereo Out\boucle3_var2 -  - Sortie - Stereo Out		487788
+	716199755	boucle3_var1 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\boucle3_var1 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle3\boucle3_random\boucle3_var1 -  - Sortie - Stereo Out\boucle3_var1 -  - Sortie - Stereo Out		481593
+	752543143	music_menu -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\music_menu -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\menu\music_menu -  - Sortie - Stereo Out\music_menu -  - Sortie - Stereo Out		2200575
+	763405861	decompte -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\decompte -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\decompte -  - Sortie - Stereo Out		158090
+	764423181	boucle2_var2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle2_var2 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle2\boucle2_random\boucle2_var2 -  - Sortie - Stereo Out\boucle2_var2 -  - Sortie - Stereo Out		366331
+	794781947	transition1 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\transition1 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle2\transition1 -  - Sortie - Stereo Out\transition1 -  - Sortie - Stereo Out		540387
+	801133868	grab_refus -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\grab_refus -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\grab_refus -  - Sortie - Stereo Out		10736
+	841572730	boucle4_var1 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\boucle4_var1 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\main_switch\boucle4_var1 -  - Sortie - Stereo Out\boucle4_var1 -  - Sortie - Stereo Out		436693
+	887538408	transition_menu -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\transition_menu -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\transition_menu -  - Sortie - Stereo Out		55596
+	920937923	planter_porte -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\planter_porte -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\planter_porte -  - Sortie - Stereo Out		15223
+	947684515	boucle3_var3 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle3_var3 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle3\boucle3_random\boucle3_var3 -  - Sortie - Stereo Out\boucle3_var3 -  - Sortie - Stereo Out		473527
+	992596242	end2 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\end2 -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\end2 -  - Sortie - Stereo Out		105084
+	1030898658	planter_tourelle -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\planter_tourelle -  - Sortie - Stereo Out_DF995010.wem		\Actor-Mixer Hierarchy\Default Work Unit\planter_tourelle -  - Sortie - Stereo Out		11155
+	1034124390	boucle3_var4 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\Musique interactive\boucle3_var4 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle3\boucle3_random\boucle3_var4 -  - Sortie - Stereo Out\boucle3_var4 -  - Sortie - Stereo Out		466988
+	1056592143	boucle4_var5 -  - Sortie - Stereo Out	E:\_Dev\Gamedev\enjam_2017\ENJAM2017\.cache\Windows\SFX\boucle4_var5 -  - Sortie - Stereo Out_9511B34A.wem		\Interactive Music Hierarchy\Default Work Unit\main_switch\boucle4\boucle4_random\boucle4_var5 -  - Sortie - Stereo Out\boucle4_var5 -  - Sortie - Stereo Out		450574
+

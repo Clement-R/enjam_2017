@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "enjam_2017", "enjam_2017.csproj", "{86816AFC-24D0-A3DB-09E8-03EA984D0B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "enjam_2017.Editor", "enjam_2017.Editor.csproj", "{585CB4B4-CAF0-7CB6-4C02-A7471AB7DE06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86816AFC-24D0-A3DB-09E8-03EA984D0B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86816AFC-24D0-A3DB-09E8-03EA984D0B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86816AFC-24D0-A3DB-09E8-03EA984D0B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86816AFC-24D0-A3DB-09E8-03EA984D0B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585CB4B4-CAF0-7CB6-4C02-A7471AB7DE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585CB4B4-CAF0-7CB6-4C02-A7471AB7DE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585CB4B4-CAF0-7CB6-4C02-A7471AB7DE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585CB4B4-CAF0-7CB6-4C02-A7471AB7DE06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
